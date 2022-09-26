@@ -65,7 +65,7 @@ p.trabalho {
 }
 
 .fundo {
-  background-image: url(img/barra-preta.png);
+  background-image: url(../img/barra-preta.png);
   background-position: center;
   background-repeat: no-repeat;
   height: 1024px;
