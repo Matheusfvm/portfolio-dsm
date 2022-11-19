@@ -1,37 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../static/styles/styles.css">
-  <title>Família</title>
-</head>
-<body class="fundo">
-  <div class="menu">
-    <!-- Cabeçalho onde ficará a logo e o menu de navegação -->
-    <img src="../static/img/logo.png" alt="logo" />
-    <ul>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="">Trabalhos</a>
-      </li>
-      <li>
-        <a href="familia.html">Família</a>
-      </li>
-    </ul>
-  </div>
-  <div>
-    <!-- Onde ficará a foto da família -->
-    <img class="foto" src="https://via.placeholder.com/500.png?text=Foto+falimia" alt="foto família">
-  </div>
-  <div id="familia" class="texto">
-    <!-- Descrição de familiares -->
-    <h2>Descrição Famíliar</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad tempore in tenetur dolorem voluptatum quidem, voluptas error illo voluptate sapiente perspiciatis eos eum ipsam doloribus fuga nesciunt aspernatur? Sit, neque?</p>
-  </div>
+{% extends "base.html" %}
+
+{% block title %}
+<title>Família</title>
+{% endblock %}
+
+{% block content %}
+<div>
+  <!-- Onde ficará a foto da família -->
+  <img class="foto" src="https://via.placeholder.com/500.png?text=Foto+falimia" alt="foto família">
+</div>
+<div id="familia" class="texto">
+  <!-- Descrição de familiares -->
+  <h2>Descrição Famíliar</h2>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad tempore in tenetur dolorem voluptatum quidem, voluptas error illo voluptate sapiente perspiciatis eos eum ipsam doloribus fuga nesciunt aspernatur? Sit, neque?</p>
+</div>
+{% endblock %}
   
-</body>
-</html>

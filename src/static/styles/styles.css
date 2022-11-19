@@ -25,7 +25,8 @@ p {
 div.texto {    
   margin-inline-start: 315px;
   margin-inline-end: 315px;
-  margin-top: 62px;
+  margin-top: 31px;
+  margin-bottom: 31px;
   height: 161px;
   background-color: white;
   border: 3px solid black;
@@ -53,7 +54,7 @@ div.trabalho {
 
 #trabalho2 {
   margin-top: 151px;
-}/* Espaçamento entre a primeira e a segunda div do portfolio.html */
+}/* Espaçamento entre a primeira e a segunda div do trabalhos.html */
 
 #familia {
   margin-top: 130px;
@@ -68,7 +69,7 @@ p.trabalho {
   background-image: url(../img/barra-preta.png);
   background-position: center;
   background-repeat: no-repeat;
-  height: 1024px;
+  height: 100%;
   background-color: #BDBEC8;
 }
 
