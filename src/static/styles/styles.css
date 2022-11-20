@@ -1,80 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ----------------- Estilo "base.html" ----------------- */
+/* configuração da tag body e da imagem de fundo */
 body {
-  margin: 0px;
-  padding: 0px;
-  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;  
+  background-image: url(../img/barra_preta_vertical.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px 100%;
+  background-color: #BDBEC8;
 }
 
+/* div da logo */
+.logo {
+  float: left;
+  width: 20%;
+  margin-top: 10px;
+}
+
+/* tag img da logo */
+.conteudo_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* div do menu de navegação */
+#navbar {
+  float: right;
+  width: 40%;
+  margin-top: 30px;
+}
+
+/* Configuração da lista de navegação */
 ul {
-  list-style-type: none;
-  margin-inline-start: 1000px;
+  list-style: none;
+  /* coloquei essa configuração pois tinha um padding padrão de 40px,
+   tava dando problema para centralizar */
+  padding-inline-start: 0%;
+
 }
 
-li {
-  display: inline;
+/* Configuração da fonte da lista */
+#fonte_link {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
 }
 
-a {
-  font-size: 1.30em;
-  padding: 10px;
+/* div do conteudo das páginas */
+.corpo {
+  float: left;
+  width: 60%;
+  margin-top: 10%;
 }
 
-p {
+@media screen and (max-width: 1023px) {
+  .logo, .corpo, #navbar {
+    width: 100%;
+  } 
+
+  /* Alinhamento horizontal para responsividade */
+  #navbar {
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 10px;
+  }
+
+  .corpo {
+    margin-top: 0%;
+  }
+
+  #fonte_link {
+    color: white;
+  }
+}
+
+/* ----------------- Estilo "index.html" ----------------- */
+.foto_minha {
+  display: block;
+  margin: 10% auto 10% auto;
+  filter : brightness(100%) 
+}
+
+/* ----------------- Estilo "trabalhos.html" ----------------- */
+.trabalho {
+  height: 150px;
+  border: 3px solid black;
+  background-color: white;
+  margin: 20% 60px 10% 60px;
+  padding-top: 40px;
+  box-shadow: 0px 5px 8px #888888;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0px;
   color: black;
 }
 
-div.texto {    
-  margin-inline-start: 315px;
-  margin-inline-end: 315px;
-  margin-top: 31px;
-  margin-bottom: 31px;
-  height: 161px;
+
+/* ----------------- Estilo "familia.html" ----------------- */
+.foto_familia {
+  display: block;
+  margin: 10% auto 10% auto;  
+}
+
+/* ----------------- Estilo comum entre os html ----------------- */
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+p {
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Configuração das divs que contem o conteudo do corpo do html */
+.texto {    
+  margin: 20px;
+  padding: 10px;
   background-color: white;
   border: 3px solid black;
   box-shadow: 0px 5px 8px #888888;
-}
-
-div.menu {  
-  display: flex;
-  height: 50px;
-  
-}
-
-div.trabalho {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 161px;
-  border: 3px solid black;
-  background-color: white;
-  margin-inline-start: 470px;
-  margin-inline-end: 470px;
-  margin-top: 150px;
-  box-shadow: 0px 5px 8px #888888;
-}
-
-#trabalho2 {
-  margin-top: 151px;
-}/* Espaçamento entre a primeira e a segunda div do trabalhos.html */
-
-#familia {
-  margin-top: 130px;
-}
-
-p.trabalho {
-  font-size: 3em;
-  font-weight: bold;
-}
-
-.fundo {
-  background-image: url(../img/barra-preta.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  background-color: #BDBEC8;
 }
 
 .foto {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10% auto 10% auto;  
 }

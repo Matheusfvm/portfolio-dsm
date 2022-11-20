@@ -1,27 +1,32 @@
 {% extends "base.html" %}
 
 {% block title %}
-<title>Home</title><!-- Titulo da head -->
+<!-- Titulo da head -->
+<title>Home</title>
 {% endblock %}
 
 {% block content %}
-<div>
-  <div>
-    <!-- Onde ficará minha foto -->
-    <img class="foto" src="..\static\img\foto400x400.png" alt="foto" />
-  </div>
+<!-- Onde ficará minha foto -->
+<!-- Picture serve para diferenciar a foto do layout desktop(400x400) e a do mobile (350x350) -->
+<picture>
+  <source class="foto_minha" media="(max-width: 1023px)" srcset="..\static\img\foto350x350.png">
+  <img class="foto_minha" src="..\static\img\foto400x400.png" alt="foto" />
+</picture>
 
-  <div class="texto">
-    <!-- Informações pessoais -->
-    <h2>Dados Pessoais</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nostrum quod quas in ratione voluptate placeat omnis error itaque distinctio, corrupti velit eum nemo hic quo facilis tempora, sequi voluptatibus!</p>
-  </div>
 
-  <div class="texto">
-        <!-- Informações educacionais -->
-    <h2>Dados educacionais</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste maiores reiciendis maxime saepe rerum reprehenderit. Optio, esse ex eligendi iure laborum nobis dicta nesciunt voluptatibus id enim, ratione obcaecati nisi.</p>
-  </div>
 
+
+<!-- Informações pessoais -->
+<div class="texto">
+  <h2>Dados Pessoais</h2>
+  <p>Meu nome é Matheus, eu tenho 25 anos. Sou nascido e criado na cidade de Jacareí- SP</p>
+</div>
+
+<!-- Informações educacionais -->
+<div class="texto">
+  <h2>Dados educacionais</h2>
+  <p>Me formei no ensino médio em 2014, em uma escola públlica. Depois fiz um Técnico em Química na ETEC da minha cidade. <br>
+  Atualmente estou cursando o curso superior de Desenvolvimento de Software Multiplataforma na FATEC de São José dos Campos com previsão de término no segundo semestre de 2025
+  </p>
 </div>
 {% endblock %}

@@ -1,2 +1,24 @@
 # Portfólio
-Portfólio pessoal, voltado para matéria de Desing Digital
+Portfólio desenvolvido para materia de Design Digital
+
+## Matheus Fernando Vieira de Melo
+
+Para executar o sistema:
+
+1. Clonar o repositório
+2. Criar o ambiente virtual:
+```console
+py -m venv venv
+```
+3. Ativar o ambiente virtual:
+```console
+env/Scripts/activate
+```
+4. Instalar as dependências:
+```console
+pip install -r requirements.txt
+```
+5. Executar a aplicação (na pasta src/)
+```console
+py app.py
+```
