@@ -12,7 +12,7 @@ py -m venv venv
 ```
 3. Ativar o ambiente virtual:
 ```console
-env/Scripts/activate
+venv/Scripts/activate
 ```
 4. Instalar as dependências:
 ```console
