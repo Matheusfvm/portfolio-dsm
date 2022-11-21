@@ -8,7 +8,7 @@ Para executar o sistema:
 1. Clonar o repositório
 2. Criar o ambiente virtual:
 ```console
-py -m venv venv
+python -m venv venv
 ```
 3. Ativar o ambiente virtual:
 ```console
