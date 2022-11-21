@@ -20,5 +20,5 @@ pip install -r requirements.txt
 ```
 5. Executar a aplicação (na pasta src/)
 ```console
-py app.py
+python app.py
 ```
